@@ -23,13 +23,6 @@ namespace Display
 	
 	static void GLAPIENTRY GLDebugCallback(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar* message, const void* userParam)
 	{
-		switch (id)
-		{
-			// ignore non-significant error/warning codes
-			case 131218 | 131185 | 131169 | 131204:
-				return;
-		}
-		
 		std::string msg("[OPENGL DEBUG MESSAGE] ");
 	
 		// print error severity

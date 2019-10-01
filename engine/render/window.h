@@ -45,9 +45,11 @@ namespace Display
 		void Update();
 		/// swap buffers at end of frame
 		void SwapBuffers();
-		
+
+		/// sets the position of the cursor
 		void SetCursorPosition(double x, double  y) const;
-	
+
+		/// toggles the cursor from being visible
 		void HideCursor(bool value) const;
 	
 		/// set key press function callback
